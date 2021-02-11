@@ -6,6 +6,7 @@ ON e.emp_no =s.emp_no;
 
 --List first name, last name, and hire date for employees who were hired in 1986.
 --https://stackoverflow.com/questions/5875712/postgresql-select-something-where-date-01-01-11
+--https://stackoverflow.com/questions/23335970/postgresql-query-between-date-ranges
 SELECT  e.last_name,e.first_name, e.hire_date 
 FROM employees e 
 WHERE    hire_date >= to_date('1986', 'YYYY')
